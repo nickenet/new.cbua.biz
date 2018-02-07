@@ -94,8 +94,8 @@ if (!\Auth::check()) {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9 page-content col-thin-right">
-					<div class="inner inner-box ads-details-wrapper">
-						<h2 class="enable-long-words">
+					<div itemscope itemtype="http://schema.org/Product" class="inner inner-box ads-details-wrapper">
+						<h2 itemprop="name" class="enable-long-words">
 							<strong>
 								<a href="{{ lurl(slugify($post->title).'/'.$post->id.'.html') }}" title="{{ mb_ucfirst($post->title) }}">
 									{{ mb_ucfirst($post->title) }}
@@ -116,13 +116,18 @@ if (!\Auth::check()) {
 						
 						<div class="ads-image">
 							@if (!in_array($parentCat->type, ['not-salable']))
-								<h1 class="pricetag">
+							<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<h2  class="pricetag">
+								    <span itemprop="price">
 									@if ($post->price > 0)
-										{!! \App\Helpers\Number::money($post->price) !!}
+										{!! $post->price !!}
 									@else
-										{!! \App\Helpers\Number::money(' --') !!}
+										{!! (' 1') !!}
 									@endif
-								</h1>
+									</span>
+									<span itemprop="priceCurrency">{!!config('currency.symbol')!!}</span>
+								</h2>
+								</span>
 							@endif
 							@if (count($post->pictures) > 0)
 								<ul class="bxslider">
@@ -135,7 +140,7 @@ if (!\Auth::check()) {
 									@foreach($post->pictures as $key => $image)
 										<li>
 											<a class="thumb-item-link" data-slide-index="{{ $key }}" href="">
-												<img src="{{ resize($image->filename, 'small') }}" alt="img">
+												<img itemprop="image" src="{{ resize($image->filename, 'small') }}" alt="img">
 											</a>
 										</li>
 									@endforeach
@@ -209,7 +214,7 @@ if (!\Auth::check()) {
 											@if (!in_array($parentCat->type, ['not-salable']))
 												<!-- Price / Salary -->
 												<div class="detail-line-lite col-md-6 col-sm-6 col-xs-6">
-													<div>
+													<div >
 														<span>
 															{{ (!in_array($parentCat->type, ['job-offer', 'job-search'])) ? t('Price') : t('Salary') }}:
 														</span>
@@ -217,7 +222,7 @@ if (!\Auth::check()) {
 															@if ($post->price > 0)
 																{!! \App\Helpers\Number::money($post->price) !!}
 															@else
-																{!! \App\Helpers\Number::money(' --') !!}
+																{!! \App\Helpers\Number::money(' 1') !!}
 															@endif
 															@if ($post->negotiable == 1)
 																<small class="label label-success"> {{ t('Negotiable') }}</small>
@@ -230,7 +235,7 @@ if (!\Auth::check()) {
 											<hr>
 											
 											<!-- Description -->
-											<div class="detail-line-content">
+											<div itemprop="description" class="detail-line-content">
 												@if (config('settings.simditor_wysiwyg') || config('settings.ckeditor_wysiwyg'))
 													<?php
 														try {

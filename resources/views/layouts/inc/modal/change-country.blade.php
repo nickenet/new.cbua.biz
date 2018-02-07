@@ -23,7 +23,7 @@
 											$countryLang = App\Helpers\Localization\Country::getLangFromCountry($country->get('languages'));
 										?>
 									<li>
-										<img src="{{ url('images/blank.gif') . getPictureVersion() }}" class="flag flag-{{ ($country->get('icode')=='uk') ? 'gb' : $country->get('icode') }}" style="margin-bottom: 4px; margin-right: 5px;">
+										<img src="{{ url('images/blank.gif') . getPictureVersion() }}" class="flag flag-{{ ($country->get('icode')=='uk') ? 'gb' : $country->get('icode') }}" alt="change country" style="margin-bottom: 4px; margin-right: 5px;">
 										<a href="{{ url($countryLang->get('abbr') . '/?d=' . $country->get('code')) }}">
 											{{ str_limit($country->get('name'), 100) }}
 										</a>

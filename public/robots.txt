@@ -12,22 +12,27 @@ Crawl-delay: 10
 
 User-agent: Yandex
 Disallow:/index.php*
+Disallow: /?d=UA
 Disallow: /admin/
 Disallow: /ajax/
-Disallow: /js/
+#Disallow: /js/
 Disallow: /en/
-#Disallow:/search?*
+Disallow: /?type=*
+Disallow: /?page=*
+Disallow:/index.php*
+Disallow:*install*
 Crawl-delay: 10
 
 User-agent: *
 Disallow: /admin/
+Disallow: /?d=UA
 Disallow: /ajax/
-Disallow: /js/
+#Disallow: /js/
 Disallow: /en/
+Disallow: /?page=*
+Disallow: /?type=*
 Disallow:/index.php*
-#Disallow:/search?*
 Disallow:*install*
-Disallow:*?*
 Crawl-delay: 10
 
 Sitemap: https://www.cbua.biz/uk/ua/sitemaps.xml

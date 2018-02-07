@@ -40,21 +40,21 @@ return [
 	
 	
 	// post_deleted
-	'post_deleted_title'               => 'Your ad has been deleted',
-	'post_deleted_content_1'           => 'Hello,<br><br>Your ad ":title" has been deleted from <a href=":appUrl">:appName</a> at :now.',
-	'post_deleted_content_2'           => '<br><br>Thank you for your trust and see you soon,',
-	'post_deleted_content_3'           => '<br><br>The :appName Team',
-	'post_deleted_content_4'           => '<br><br><br>PS: This is an automated email, please don\'t reply.',
+	'post_deleted_title'               => 'Ваше оголошення було видалено',
+	'post_deleted_content_1'           => 'Доброго дня,<br><br>Ваше оголошення ":title" на сайті <a href=":appUrl">:appName</a> було видалено :now.',
+	'post_deleted_content_2'           => '<br><br>Дякуємо за те що ви з нами, з повагою',
+	'post_deleted_content_3'           => '<br><br>Команда :appName',
+	'post_deleted_content_4'           => '<br><br><br>PS: Цього листа сформовано автоматично, будь ласка, не відповідайте на нього.',
 	
 	
 	// post_seller_contacted
-	'post_seller_contacted_title'      => 'Your ad ":title" on :appName',
-	'post_seller_contacted_content_1'  => '<strong>Contact Information :</strong><br>Name : :name<br>Email address : :email<br>Phone number : :phone<br><br>This email was sent to you about the ad ":title" you filed on <a href=":appUrl">:appName</a> : <a href=":postUrl">:postUrl</a>',
-	'post_seller_contacted_content_2'  => '<br><br>PS : The person who contacted you do not know your email as you will not reply.',
-	'post_seller_contacted_content_3'  => '<br><br>Remember to always check the details of your contact person (name, address, ...) to ensure you have a contact in case of dispute. In general, choose the delivery of the item in hand.<br><br>Beware of enticing offers! Be careful with requests from abroad when you only have a contact email. The bank transfer by Western Union or MoneyGram proposed may well be artificial.',
-	'post_seller_contacted_content_4'  => '<br><br>Thank you for your trust and see you soon,',
-	'post_seller_contacted_content_5'  => '<br><br>The :appName Team',
-	'post_seller_contacted_content_6'  => '<br><br><br>PS: This is an automated email, please don\'t reply.',
+	'post_seller_contacted_title'      => 'Ваше оголошення ":title" на сайті :appName',
+	'post_seller_contacted_content_1'  => '<strong>Контактна інформація :</strong><br>Ім\'я : :name<br>Електронна пошта : :email<br>Номер телефону : :phone<br><br>Цей лист був відправлений вам з приводу оголошення ":title" на сайті <a href=":appUrl">:appName</a> : <a href=":postUrl">:postUrl</a>',
+	'post_seller_contacted_content_2'  => '<br><br>PS : Особа, яка зв\'язалася з вами, не знає вашу електронну пошту.',
+	'post_seller_contacted_content_3'  => '<br><br>Не забувайте детально перевіряти свої контактні дані (ім\'я, адреса, ...) на випадок винекнення спорів.<br><br>Остерігайтеся привабливих пропозицій! Не плать кошти на перед, користуйтеся доставкою з післяоплатою або передавайте кошти при особистій зустрічі.',
+	'post_seller_contacted_content_4'  => '<br><br>Дякуємо за те що ви з нами, з повагою,',
+	'post_seller_contacted_content_5'  => '<br><br>Команда :appName',
+	'post_seller_contacted_content_6'  => '<br><br><br>PS: Цього листа сформовано автоматично, будь ласка, не відповідайте на нього.',
 	
 	
 	// user_deleted
@@ -62,7 +62,7 @@ return [
 	'user_deleted_content_1'         => 'Hello,<br><br>Your account has been deleted from <a href=":appUrl">:appName</a> at :now.',
 	'user_deleted_content_2'         => '<br><br>Thank you for your trust and see you soon,',
 	'user_deleted_content_3'         => '<br><br>The :appName Team',
-	'user_deleted_content_4'         => '<br><br><br>PS: This is an automated email, please don\'t reply.',
+	'user_deleted_content_4'         => '<br><br><br>PS: Цього листа сформовано автоматично, будь ласка, не відповідайте на нього.',
 	
 	
 	// user_activated
@@ -71,7 +71,7 @@ return [
 	'user_activated_content_2'       => '<br>Your account has been activated.',
 	'user_activated_content_3'       => '<br><br><strong>Note : :appName team recommends that you:</strong><br><br>1 - Always beware of advertisers refusing to make you see the good offered for sale or rental,<br>2 - Never send money by Western Union or other international mandate.<br><br>If you have any doubt about the seriousness of an advertiser, please contact us immediately. We can then neutralize as quickly as possible and prevent someone less informed do become the victim.',
 	'user_activated_content_4'       => '<br><br>You’re receiving this email because you recently created a new :appName account. If this wasn’t you, please ignore this email.',
-	'user_activated_content_5'       => '<br><br>Kind Regards,<br>The :appName Team',
+	'user_activated_content_5'       => '<br><br>З повагою,<br> команда :appName',
 	
 	
 	// reset_password
@@ -80,7 +80,7 @@ return [
 	'reset_password_content_1'       => 'Forgot your password?',
 	'reset_password_content_2'       => 'Let\'s get you a new one.',
 	'reset_password_content_3'       => 'If you did not request a password reset, no further action is required.',
-	'reset_password_content_4'       => '<br><br>Regards,<br>:appName',
+	'reset_password_content_4'       => '<br><br>З повагою,<br>:appName',
 	'reset_password_content_5'       => '<br><br>---<br>If you’re having trouble clicking the "Reset Password" button, copy and paste the URL below into your web browser:<br> :link',
 	
 	
@@ -100,9 +100,9 @@ return [
 	'post_archived_content_1'          => 'Доброго дня,<br><br>Ваше оголошення  ":title" було заархівований з :appName до :now.',
 	'post_archived_content_2'          => '<br><br>Ви можете поновити його, натиснувши тут : :repostLink',
 	'post_archived_content_3'          => '<br><br>Якщо ви нічого не зробите, ваше оголошення буде назавжди видалено :dateDel.',
-	'post_archived_content_4'          => '<br><br>Дякуємо за вашу довіру і скоро побачимося,',
+	'post_archived_content_4'          => '<br><br>Дякуємо за те що ви з нами, з повагою,',
 	'post_archived_content_5'          => '<br><br>Команда :appName',
-	'post_archived_content_6'          => '<br><br><br>PS: Це автоматичний лист, будь ласка, не відповідайте.',
+	'post_archived_content_6'          => '<br><br><br>PS: Цього листа сформовано автоматично, будь ласка, не відповідайте на нього.',
 	
 	
 	// post_will_be_deleted
@@ -110,23 +110,23 @@ return [
 	'post_will_be_deleted_content_1'   => 'Доброго дня,<br><br>Ваше оголошення ":title" буде видалено через :days днів із :appName.',
 	'post_will_be_deleted_content_2'   => '<br><br>Ви можете поновити його, натиснувши тут: :repostLink',
 	'post_will_be_deleted_content_3'   => '<br><br>Якщо ви нічого не зробите, ваше оголошення буде назавжди видалено :dateDel.',
-	'post_will_be_deleted_content_4'   => '<br><br>Дякую за вашу довіру та надіємося незабаром побачимо вас,',
+	'post_will_be_deleted_content_4'   => '<br><br>Дякуємо за те що ви з нами, з повагою,',
 	'post_will_be_deleted_content_5'   => '<br><br>Команда :appName',
-	'post_will_be_deleted_content_6'   => '<br><br><br>PS: Це автоматичний лист, будь ласка, не відповідайте.',
+	'post_will_be_deleted_content_6'   => '<br><br><br>PS: Цього листа сформовано автоматично, будь ласка, не відповідайте на нього.',
 	
 	
 	// post_notification
 	'post_notification_title'          => 'New ad has been posted',
 	'post_notification_content_1'      => 'Hello Admin,<br><br>The user :advertiserName has just posted a new ad.',
 	'post_notification_content_2'      => '<br>The ad title: :title<br>Posted on: :now at :time',
-	'post_notification_content_3'      => '<br><br>Kind Regards,<br>The :appName Team',
+	'post_notification_content_3'      => '<br><br>З повагою,<br>команда :appName',
 	
 	
 	// user_notification
 	'user_notification_title'        => 'New User Registration',
 	'user_notification_content_1'    => 'Hello Admin,<br><br>:name has just registered.',
 	'user_notification_content_2'    => '<br>Registered on: :now at :time<br>Email: <a href="mailto::email">:email</a>',
-	'user_notification_content_3'    => '<br><br>Kind Regards,<br>The :appName Team',
+	'user_notification_content_3'    => '<br><br>З повагою,<br>команда :appName',
 	
 	
 	// payment_sent

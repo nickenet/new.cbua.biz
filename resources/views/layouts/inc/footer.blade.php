@@ -106,28 +106,28 @@
 								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
 									@if (config('settings.facebook_page_url'))
 									<li>
-										<a class="icon-color fb" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.facebook_page_url') }}" data-original-title="Facebook">
+										<a class="icon-color fb" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.facebook_page_url') }}" data-original-title="Facebook" rel="nofollow">
 											<i class="fa fa-facebook"></i>
 										</a>
 									</li>
 									@endif
 									@if (config('settings.twitter_url'))
 									<li>
-										<a class="icon-color tw" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.twitter_url') }}" data-original-title="Twitter">
+										<a class="icon-color tw" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.twitter_url') }}" data-original-title="Twitter" rel="nofollow">
 											<i class="fa fa-twitter"></i>
 										</a>
 									</li>
 									@endif
 									@if (config('settings.google_plus_url'))
 									<li>
-										<a class="icon-color gp" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.google_plus_url') }}" data-original-title="Google+">
+										<a class="icon-color gp" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.google_plus_url') }}" data-original-title="Google+" rel="nofollow">
 											<i class="fa fa-google-plus"></i>
 										</a>
 									</li>
 									@endif
 									@if (config('settings.linkedin_url'))
 									<li>
-										<a class="icon-color lin" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.linkedin_url') }}" data-original-title="LinkedIn">
+										<a class="icon-color lin" title="" data-placement="top" data-toggle="tooltip" href="{{ config('settings.linkedin_url') }}" data-original-title="LinkedIn" rel="nofollow">
 											<i class="fa fa-linkedin"></i>
 										</a>
 									</li>
@@ -172,5 +172,5 @@
 			
 			</div>
 		</div>
-	</div>
+	
 </footer>

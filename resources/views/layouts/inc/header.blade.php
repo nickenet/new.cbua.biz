@@ -45,7 +45,7 @@ if (getSegment(1) != trans('routes.countries')) {
 						@if (isset($country) and !$country->isEmpty())
 							@if (file_exists(public_path().'/images/flags/24/'.strtolower($country->get('code')).'.png'))
 								<button class="flag-menu country-flag visible-xs btn btn-default hidden" href="#selectCountry" data-toggle="modal">
-									<img src="{{ url('images/flags/24/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" style="float: left;">
+									<img src="{{ url('images/flags/24/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" alt="country flag" style="float: left;">
 									<span class="caret hidden-xs"></span>
 								</button>
 							@endif
@@ -71,12 +71,12 @@ if (getSegment(1) != trans('routes.countries')) {
 									<li class="flag-menu country-flag tooltipHere hidden-xs" data-toggle="tooltip" data-placement="{{ (config('lang.direction') == 'rtl') ? 'bottom' : 'right' }}" {!! $multiCountriesLabel !!}>
 										@if (isset($multiCountriesIsEnabled) and $multiCountriesIsEnabled)
 											<a href="#selectCountry" data-toggle="modal">
-												<img class="flag-icon" src="{{ url('images/flags/32/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" style="float: left;">
+												<img class="flag-icon" src="{{ url('images/flags/32/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" alt="flag" style="float: left;">
 												<span class="caret hidden-sm"></span>
 											</a>
 										@else
 											<a style="cursor: default;">
-												<img class="flag-icon" src="{{ url('images/flags/32/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" style="float: left;">
+												<img class="flag-icon" src="{{ url('images/flags/32/'.strtolower($country->get('code')).'.png') . getPictureVersion() }}" alt="flag" style="float: left;">
 											</a>
 										@endif
 									</li>
